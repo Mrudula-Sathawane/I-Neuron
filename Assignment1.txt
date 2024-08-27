@@ -1,0 +1,182 @@
+1)
+- *: Expression (multiplication operator)
+- 'hello': Value (string)
+- -87.8: Value (floating-point number)
+- `-`: Expression (subtraction or negation operator)
+- /: Expression (division operator)
+- +: Expression (addition operator)
+- 6: Value (integer)
+
+2)
+A string and a variable are both fundamental concepts in programming, but they serve different purposes:
+
+String:
+A string is a sequence of characters enclosed in quotation marks (single, double, or triple quotes).
+It represents text data and can include letters, numbers, symbols, and spaces.
+Example: "hello", '123', "Welcome to programming!"
+Variable:
+A variable is a symbolic name or reference that stores a value, which can be of various data types like integers, floats, strings, lists, etc.
+Variables are used to store and manipulate data within a program. The value of a variable can change throughout the execution of a program.
+
+3)
+Here are three different data types commonly used in programming:
+
+1. Integer (int)
+Description: Integers are whole numbers without a fractional component. They can be positive, negative, or zero.
+Examples:
+10 (positive integer)
+-5 (negative integer)
+0 (zero)
+Usage: Integers are used for counting, indexing, and performing arithmetic operations.
+2. String (str)
+Description: A string is a sequence of characters enclosed in quotes (single, double, or triple). Strings represent textual data and can include letters, numbers, symbols, and spaces.
+Examples:
+"Hello, World!" (a string with words and punctuation)
+'12345' (a string of numbers, treated as text)
+"" (an empty string)
+Usage: Strings are used for storing and manipulating text, such as names, sentences, and any other characters.
+3. Boolean (bool)
+Description: A boolean represents one of two possible values: True or False. Booleans are typically the result of comparison operations or conditional statements.
+Examples:
+True (boolean true)
+False (boolean false)
+Usage: Booleans are used in decision-making, controlling the flow of programs through conditional statements like if, while, and for loops.
+Each of these data types serves a specific purpose in programming and is essential for building a wide range of applications.
+
+4)
+What is an Expression Made Up Of?
+An expression in programming is made up of:
+
+Operands: These are the values or variables that the expression operates on. They can be of various data types, such as integers, floats, strings, or booleans.
+Examples: 5, x, "hello"
+Operators: These are symbols or keywords that specify the operation to be performed on the operands.
+Examples: + (addition), - (subtraction), * (multiplication), / (division), == (equality), and (logical AND)
+What Do All Expressions Do?
+All expressions are evaluated to produce a single value or result. The evaluation process depends on the operands and operators used in the expression. The result can be:
+
+A numeric value: When arithmetic operators are used.
+Example: 2 + 3 evaluates to 5.
+A string: When string concatenation or manipulation is involved.
+Example: "Hello " + "World!" evaluates to "Hello World!".
+A boolean value: When relational or logical operators are used.
+Example: 5 > 3 evaluates to True.
+In essence, expressions are a way of computing values, making decisions, and manipulating data in a program.
+
+5)
+Expression vs. Statement:
+Expression:
+Definition: An expression is a combination of values, variables, operators, and function calls that can be evaluated to produce a single value.
+Purpose: The primary purpose of an expression is to compute and return a value.
+Examples:
+5 + 3 (evaluates to 8)
+x * 2 (if x = 4, it evaluates to 8)
+"Hello, " + "World!" (evaluates to "Hello, World!")
+Statement:
+Definition: A statement is a complete instruction that performs some action. It may include expressions but does not necessarily evaluate to a value.
+Purpose: The primary purpose of a statement is to execute an action, such as assigning a value to a variable, making decisions, or controlling the flow of a program.
+Examples:
+spam = 10 (an assignment statement that stores the value 10 in the variable spam)
+print("Hello, World!") (a statement that outputs a string to the console)
+if x > 5: ... (a conditional statement that controls the flow based on the condition)
+
+6)
+bacon = 22
+bacon + 1
+The variable bacon will still contain the value 22.
+
+Explanation:
+The expression bacon + 1 evaluates to 23, but this result is not assigned back to bacon.
+Since there's no assignment operation (=) to update the value of bacon, its original value remains unchanged.
+To update bacon, you would need to use an assignment like this:
+bacon = bacon + 1
+In this case, bacon would then contain 23.
+
+7)
+The values of the following two terms will be:
+
+'spam' + 'spamspam':
+
+This is a string concatenation operation.
+The result will be the two strings joined together: 'spamspamspam'.
+'spam' * 3:
+
+This is a string repetition operation.
+The string 'spam' will be repeated 3 times: 'spamspamspam'.
+So, both expressions will result in the string 'spamspamspam'.
+
+8)
+In programming, eggs is a valid variable name, while 100 is invalid due to the rules that govern how variable names can be defined. Here's why:
+
+Rules for Variable Names:
+Must start with a letter or an underscore (_):
+
+Variable names must begin with a letter (uppercase or lowercase) or an underscore. They cannot start with a number.
+eggs starts with the letter "e", so it's valid.
+100 starts with a number, so it's invalid as a variable name.
+Can contain letters, numbers, and underscores:
+
+After the first character, variable names can include letters, numbers, and underscores.
+Example: eggs_100 is valid.
+Cannot be a reserved keyword:
+
+Variable names cannot be one of the reserved keywords in the programming language, such as if, for, while, etc.
+Both eggs and 100 are not reserved keywords, so they don't violate this rule.
+Why eggs is Valid:
+eggs follows all the naming rules: it starts with a letter, contains only letters, and is not a reserved keyword.
+Why 100 is Invalid:
+100 starts with a number, which violates the rule that variable names must begin with a letter or an underscore. This is why 100 cannot be used as a variable name.
+To use 100 as part of a variable name, it would need to start with a letter or underscore, such as num100 or _100.
+
+9)
+The three functions used to convert a value into an integer, floating-point number, or string in Python are:
+
+int(): Converts a value to an integer.
+
+Example: int("42") will convert the string "42" to the integer 42.
+num = int("100")  # Converts the string "100" to the integer 100
+float(): Converts a value to a floating-point number.
+
+Example: float("3.14") will convert the string "3.14" to the float 3.14.
+num = float("2.718")  # Converts the string "2.718" to the float 2.718
+str(): Converts a value to a string.
+
+Example: str(42) will convert the integer 42 to the string "42".
+Usage:
+text = str(123)  # Converts the integer 123 to the string "123"
+These functions are commonly used when you need to ensure a value is in a specific data type before performing operations on it.
+
+10)
+The expression 'I have eaten ' + 99 + ' burritos.' causes an error because it attempts to concatenate a string with an integer directly. In Python, you cannot directly add (concatenate) a string and an integer together, as they are different data types.
+
+Why It Causes an Error:
+Type Mismatch: The + operator is used for concatenation when dealing with strings, but here it's being applied between a string ('I have eaten ') and an integer (99). Python doesn't know how to combine these different data types directly, so it raises a TypeError.
+How to Fix It:
+You can fix this error by converting the integer 99 to a string using the str() function before concatenation.
+
+'I have eaten ' + str(99) + ' burritos.'
+Output:
+'I have eaten 99 burritos.'
+This way, all parts of the expression are strings, and Python can concatenate them without any issues.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
